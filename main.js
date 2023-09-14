@@ -1,4 +1,20 @@
 // // 6 kyu
+
+let cardinalCount = {}
+
+function countCardinals(arr){
+  for(const ele of arr){
+    if(cardinalCount[ele]){
+    cardinalCount[ele] += 1
+    }else{
+    cardinalCount[ele] = 1
+    }}
+  return cardinalCount
+}
+
+function isValidWalk(walk) {
+  countCardinals(walk)
+}
 // Given a string of words, you need to find the highest scoring word.
 
 // Each letter of a word scores points according to its position in the alphabet: a = 1, b = 2, c = 3 etc.
