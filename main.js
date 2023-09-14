@@ -19,7 +19,6 @@ function countCardinals(arr){
 function isValidWalk(walk) {
   countCardinals(walk)
   return cardinalCount.n === cardinalCount.s && cardinalCount.e === cardinalCount.w && walk.length === 10
-  cardinalCount = {}
 }
 // Given a string of words, you need to find the highest scoring word.
 
